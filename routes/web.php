@@ -7,7 +7,7 @@ use App\Http\controllers\UserController;
 //     return view('user',['id'=>$id]);
 // });
 
-
+// New Test
 Route::get('/user/{id?}',[UserController::class, 'show']);
 
 Route::get('/welcome-student/{name?}', [UserController::class, 'welcomeStudent']);
