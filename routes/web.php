@@ -29,3 +29,9 @@ Route::prefix('admin')->group(function () {
     return "This is the admin users page";
   });
 });
+
+Route::get('header', function(){
+    return response("Hello World")
+        ->header('Content-Type', 'text/plain')
+    ->header('X-Custom-Header', 'Laravel');
+});
