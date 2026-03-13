@@ -35,3 +35,10 @@ Route::get('header', function(){
         ->header('Content-Type', 'text/plain')
     ->header('X-Custom-Header', 'Laravel');
 });
+
+Route::get('/api/student', function(){
+    return response()->json([
+        'name' => 'Navjot',
+        'course' => 'Laravel'
+    ]);
+});
